@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\RightBarsController;
 use App\Http\Controllers\BlogController as ControllersBlogController;
 use App\Http\Controllers\CategoryController as ControllersCategoryController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
