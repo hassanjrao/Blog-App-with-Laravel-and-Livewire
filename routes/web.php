@@ -58,3 +58,10 @@ Route::middleware(["auth"])->prefix("admin")->name("admin.")->group(function (){
     Route::resource('right-bars', RightBarsController::class);
 
 });
+
+
+Route::get("storage-link",function(){
+    Artisan::call("storage:link");
+
+    return "Storage link created";
+});
