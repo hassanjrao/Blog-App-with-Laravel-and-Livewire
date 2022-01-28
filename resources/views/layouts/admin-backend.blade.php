@@ -188,6 +188,38 @@
                             </a>
                         </li>
 
+                        <li class="nav-main-item open">
+                            <a class="nav-main-link{{ request()->is('admin/categories') ? ' active' : '' }}"
+                                href="{{ route('admin.categories.index') }}">
+                                <i class="nav-main-link-icon si si-user"></i>
+                                <span class="nav-main-link-name">Categories</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-main-item open">
+                            <a class="nav-main-link{{ request()->is('admin/blogs') ? ' active' : '' }}"
+                                href="{{ route('admin.blogs.index') }}">
+                                <i class="nav-main-link-icon si si-user"></i>
+                                <span class="nav-main-link-name">Blogs</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-main-item open">
+                            <a class="nav-main-link{{ request()->is('admin/left-bars') ? ' active' : '' }}"
+                                href="{{ route('admin.left-bars.index') }}">
+                                <i class="nav-main-link-icon si si-user"></i>
+                                <span class="nav-main-link-name">Left Bars</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-main-item open">
+                            <a class="nav-main-link{{ request()->is('admin/right-bars') ? ' active' : '' }}"
+                                href="{{ route('admin.right-bars.index') }}">
+                                <i class="nav-main-link-icon si si-user"></i>
+                                <span class="nav-main-link-name">Right Bars</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <!-- END Side Navigation -->

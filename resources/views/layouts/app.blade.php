@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Valiant Grading Advantage</title>
+    <title>Blog App</title>
 
     <meta name="description" content="Valiant Grading Advantage, LLC All Rights Reserved 2021">
     <meta name="author" content="pixelcave">
@@ -33,17 +33,7 @@
         window.Laravel = {!! json_encode(['csrfToken' => csrf_token()]) !!};
     </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R8B5MDKEHX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-R8B5MDKEHX');
-    </script>
 
 </head>
 
