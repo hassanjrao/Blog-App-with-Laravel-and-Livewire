@@ -19,10 +19,7 @@
                                     <a class="btn-block-option fs-sm" href="{{ route('password.request') }}">Forgot
                                         Password?</a>
                                 @endif
-                                <a class="btn-block-option" href="{{ route('register') }}" data-bs-toggle="tooltip"
-                                    data-bs-placement="left" title="New Account">
-                                    <i class="fa fa-user-plus"></i>
-                                </a>
+                               
                             </div>
                         </div>
                         <div class="block-content">
@@ -81,11 +78,6 @@
                                             </button>
                                         </div>
 
-                                        <div class="mt-4">
-
-                                            <a href="{{ route("register") }}">Not a member? Create new account</a>
-
-                                        </div>
                                     </div>
                                 </form>
                                 <!-- END Sign In Form -->

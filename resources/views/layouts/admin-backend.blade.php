@@ -220,6 +220,14 @@
                             </a>
                         </li>
 
+                        <li class="nav-main-item open">
+                            <a class="nav-main-link{{ request()->is('admin/headers') ? ' active' : '' }}"
+                                href="{{ route('admin.headers.index') }}">
+                                <i class="nav-main-link-icon si si-user"></i>
+                                <span class="nav-main-link-name">Header Logo</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
                 <!-- END Side Navigation -->

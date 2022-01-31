@@ -40,18 +40,32 @@
     <main class="flex-shrink-0">
         <!-- Navigation-->
         <!-- Header-->
+
+        @php
+
+        $header=\App\Models\Header::find(1);
+
+
+
+
+        @endphp
         <header class="bg-dark ">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Scholarly Owl</h1>
+                            <a href="{{ route("home") }}">
+                                <h1 class="display-5 fw-bolder text-white mb-2">{{ $header->heading }}</h1>
+
+                            </a>
 
                         </div>
                     </div>
                     <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                        <img class="img-fluid rounded-3 my-5" src="https://dummyimage.com/200x100/343a40/6c757d"
-                            alt="...">
+                        <a href="{{ route("home") }}">
+                        <img class="img-fluid rounded-3 my-5" src="{{ asset('header/'.$header->image) }}" alt="">
+
+                        </a>
                     </div>
                 </div>
             </div>
@@ -115,7 +129,7 @@
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0 text-white">Copyright &copy; Your Website 2021</div>
+                    <div class="small m-0 text-white">Copyright &copy; scholarlyowl.com 2022</div>
                 </div>
                 <div class="col-auto">
                     <a class="link-light small" href="#!">Privacy</a>

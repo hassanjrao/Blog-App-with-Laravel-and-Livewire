@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\admin\BlogController;
-use App\Http\Controllers\admin\CategoryController;
+use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\HeaderController;
 use App\Http\Controllers\Admin\LeftBarsController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\RightBarsController;
@@ -58,11 +59,15 @@ Route::middleware(["auth"])->prefix("admin")->name("admin.")->group(function (){
 
     Route::resource('right-bars', RightBarsController::class);
 
+
+    Route::resource("headers",HeaderController::class);
+
 });
 
 
-Route::get("storage-link",function(){
-    Artisan::call("storage:link");
+// Route::get("/storage-link",function(){
 
-    return "Storage link created";
-});
+//     symlink("/home/i95dgwlt0otv/laravel/storage/app/public","/home/i95dgwlt0otv/public_html/storage");
+
+
+// });
